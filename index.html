@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>glb Model Viewer</title>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .swiper-container {
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      model-viewer {
+        width: 100%;
+        height: 300px;
+      }
+    </style>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_1.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_2.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_3.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_4.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_5.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_6.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_7.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_8.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_9.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_10.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_11.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_12.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_13.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_14.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_15.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="swiper-slide">
+          <model-viewer
+            src="glb/model_16.glb"
+            ar
+            camera-controls
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // Initialize Swiper
+      const swiper = new Swiper(".swiper-container", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
